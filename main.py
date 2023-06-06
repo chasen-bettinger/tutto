@@ -1,6 +1,11 @@
 from import_private_key import import_private_key
 from layout import Layout
 from metablock import Metablock
+from run import run
+import shutil
+
+# 0. cleanup
+shutil.rmtree("./demo-project", ignore_errors=True)
 
 # 1. Creating a dictionary in a format that allows us
 # to create a signer that will eventually be signing
@@ -15,6 +20,8 @@ project_owner = import_private_key("./chasen")
 # the supply chain (functionaries)
 brendan_functionary = import_private_key("./brendan")
 
+artifact_created_from_clone = "demo-project/foo.py"
+
 # 3. Create a layout. This defines what is going to happen
 # within the supply chain.
 layout = Layout.read(
@@ -25,7 +32,7 @@ layout = Layout.read(
                 "name": "clone",
                 "expected_materials": [],
                 "expected_products": [
-                    ["CREATE", "demo-project/foo.py"],
+                    ["CREATE", artifact_created_from_clone],
                     ["DISALLOW", "*"],
                 ],
                 "pubkeys": [brendan_functionary["keyid"]],
@@ -44,6 +51,7 @@ layout = Layout.read(
 metadata = Metablock(signed=layout)
 
 # 5. Sign the layout with the project owner's private key.
+# TODO: what happens if there is no signature?
 metadata.sign(project_owner)
 
 # output looks like this:
@@ -52,3 +60,12 @@ metadata.sign(project_owner)
 
 # 6. Save metadata to disk.
 metadata.dump("root.layout")
+
+# 7. run a command
+run(
+    name="clone",
+    base_path=".",
+    link_cmd_args=["git", "clone", "https://github.com/in-toto/demo-project.git"],
+    product_list=[artifact_created_from_clone],
+    signing_key=brendan_functionary,
+)
