@@ -1,0 +1,51 @@
+{
+ "signatures": [
+  {
+   "keyid": "e39dfe07f2eb1658e15bf27f2813ec36d2bfb5b9efb3296f10fc6cd7f62fe8f9",
+   "sig": "983dd26651eb568e0d141f0c67c5a69a8a6591f0cefe3093b1c03102757406dd38281d4609d0ba6c28c527fc16ef4a0df498a0a481645a87222e8d41ef68784c1b909e2362e6bd2e42debbc1120413b867c5e5120932b0e26b955ba607cbfc46faaed70a1334b2c060ecdb990958474b3ba944e6c442ed3237a7f29a1b43d4446892a301edc1ce7e3c76a98c1aa37b81ec27f4714f3f259edc5d796f36d625301833dcdc9d97c5661ab187f3d5047e4b016e7b4fa0f1ad58a6f45cc8787910729fa82f85f2f513b4817ade09779c62994d642473e6205113c2685eedb25d972a5f33156434985f907e5c1de1126892973938c6f946b2161fcb079bb9d449d8561d876fa669101e0d00040e9598f2c30ecd799be695afcb9b694cc2a51d6ff23e2b34a47926aa7950e110570bf27b9df85e230bb1d3468acac37cc041e2ce1985688bc44440c41d5838dbe664c145e5a15c2f5a786eb833ad05a45b19a216b502055862f3276b1aee626c9f9bb335e39551a09bdb467eccb8c16a91dc81f53796"
+  }
+ ],
+ "signed": {
+  "_type": "layout",
+  "expires": null,
+  "inspect": [],
+  "keys": {
+   "b3591b9011a356e33dafdd93f01eea89b6dd55f2410bb1eff5d0f459ce359036": {
+    "keyid": "b3591b9011a356e33dafdd93f01eea89b6dd55f2410bb1eff5d0f459ce359036",
+    "keytype": "rsa",
+    "keyval": {
+     "private": "-----BEGIN RSA PRIVATE KEY-----\n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\n-----END RSA PRIVATE KEY-----",
+     "public": "-----BEGIN PUBLIC KEY-----\nMIIBojANBgkqhkiG9w0BAQEFAAOCAY8AMIIBigKCAYEAsr1zSpqfAM6uenKRbGki\nQhFfftGinR8i6TTbJKJ0eIUUf7xjNsAL4ojtvW6vMZ+/Q1NIUyFl/KcfA5pdCQBF\nXROeVrDezxyzA54kOjIprOagOJ+3DzQzAiKOqlPnh9aXZRtPyZHC+j8vxg71C2Cl\n3F1ggn6CBsMVJpAsM0qMoTA5e13P9AJYzoxK0xWHP9TRxpkxYoVwv07AOBYxIHSY\nb2j7KlIMOAf7J8DYMQIr+CxZeamNnboV1YKUz//sn4UlNGeciH7NKlRA4IN6Zszm\nPcWo9A/FMwfkGdOEPCN7yga0Wdru0edgSzEO0gKaG8R0ZEI1VaQiArkiginZ32n5\nORLHIj1neizILItubRVFnawLyVfYTX41l9tY7F5q9f+fka4JDHvwN7AQ/FTFmISf\npOg/sEuiuVXhzajgpiKi8bYhyJh9gKiGETaxmRHeoC3uBHC5SfD2WR7UC3JDnIzM\nFYLOx3kmAb94cdPp1NKC+Qrh4bhkAO7H2MtIPnnOJoLvAgMBAAE=\n-----END PUBLIC KEY-----"
+    },
+    "scheme": "rsassa-pss-sha256"
+   }
+  },
+  "readme": "",
+  "steps": [
+   {
+    "_type": "step",
+    "expected_command": [
+     "git",
+     "clone",
+     "https://github.com/in-toto/demo-project.git"
+    ],
+    "expected_materials": [],
+    "expected_products": [
+     [
+      "CREATE",
+      "demo-project/foo.py"
+     ],
+     [
+      "DISALLOW",
+      "*"
+     ]
+    ],
+    "name": "clone",
+    "pubkeys": [
+     "b3591b9011a356e33dafdd93f01eea89b6dd55f2410bb1eff5d0f459ce359036"
+    ],
+    "threshold": 1
+   }
+  ]
+ }
+}

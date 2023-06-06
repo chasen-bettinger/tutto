@@ -203,8 +203,6 @@ def _get_keyid(keytype, scheme, key_value):
 
 
 def import_private_key(filepath):
-    print("importing private key...")
-
     # 1. Read the private key file
     file_object = None
     with _get_file(filepath) as file_object:
@@ -219,12 +217,8 @@ def import_private_key(filepath):
     # TODO: this was in the original code, but I do not
     # understand why it is necessary. Reevaluate later
     # as a learning opportunity.
-    # print(":::private before:::")
-    # print(private)
-    # public = _extract_pem(public, private_pem=False)
-    # private = _extract_pem(private, private_pem=True)
-    # print(":::private after:::")
-    # print(private)
+    public = _extract_pem(public, private_pem=False)
+    private = _extract_pem(private, private_pem=True)
 
     # 3. Generate keyvalue dictionary
     key_value = {"public": public.replace("\r\n", "\n"), "private": ""}
